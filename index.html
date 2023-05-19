@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/calc.css">
+  </head>
+  <body>
+
+
+    <section class="calc m-auto my-5 bg-warning w-25 p-4 rounded-5">
+        <div class="container">
+                <form action="">
+                  <div class="row gy-2" >
+                    <input type="text" name="num" id="number" class="inp m-auto my-2 border border-2 border-dark-subtle">
+                    <div class="col-12">
+                      <button type="button" class="w-25" id="remove" onclick="rem()">R</button>
+                      <button type="button" class="w-25" id="clear" onclick="clr()">C</button>
+                      <button type="button" class="w-25" id="mult" onclick="multi()">*</button>
+                    </div>
+                    <div class="col-3">
+                      <button type="button" class="calcBtn" id="sev" onclick="seven()">7</button>
+                    </div>
+                    <div class="col-3">
+                      <button type="button" class="calcBtn" id="egh" onclick="eight()">8</button>
+                    </div>
+                    <div class="col-3">
+                      <button type="button" class="calcBtn" id="nin" onclick="nine()">9</button>
+                    </div>
+                    <div class="col-3">
+                      <button type="button" class="calcBtn fw-bold" id="div" onclick="divi()">/</button>
+                    </div>
+                    <div class="col-3">
+                      <button type="button" class="calcBtn" id="four" onclick="four4()">4</button>
+                    </div>
+                    <div class="col-3">
+                      <button type="button" class="calcBtn" id="five" onclick="five5()">5</button>
+                    </div>
+                    <div class="col-3">
+                      <button type="button" class="calcBtn" id="six" onclick="six6()">6</button>
+                    </div>
+                    <div class="col-3">
+                      <button type="button" class="calcBtn fw-bold" id="plus" onclick="pluss()">+</button>
+                    </div>
+                    <div class="col-3">
+                      <button type="button" class="calcBtn" id="one" onclick="one1()">1</button>
+                    </div>
+                    <div class="col-3">
+                      <button type="button" class="calcBtn" id="two" onclick="two2()">2</button>
+                    </div>
+                    <div class="col-3">
+                      <button type="button" class="calcBtn" id="thr" onclick="three()">3</button>
+                    </div>
+                    <div class="col-3">
+                      <button type="button" class="calcBtn fw-bold" id="min" onclick="mini()">-</button>
+                    </div>
+                    <div class="col-3">
+                      <button type="button" class="calcBtn" id="zero" onclick="zero0()">0</button>
+                    </div>
+                    <div class="col-3">
+                      <button type="button" class="calcBtn fw-bold" id="dot" onclick="dotfr()">.</button>
+                    </div>
+                    <div class="col-6">
+                      <button type="button" class="calceq fw-bold bg-primary text-light" id="eq" onclick="equal()">=</button>
+                    </div>
+                    
+                    
+
+
+                  </div>
+                </form>
+        </div>
+    </section>
+
+
+
+
+
+    <div class="w-50 row justify-content-around g-3 m-auto bg-primary-subtle">
+      <button type="button" class="btn btn-primary" onclick="output()">
+        Problem (1)
+      </button>
+      <button type="button" class="btn btn-secondary" onclick="outputPro2()">
+        Problem (2)
+      </button>
+      <button type="button" class="btn btn-success" onclick="getMax()">
+        Problem (3)
+      </button>
+      <button type="button" class="btn btn-danger" onclick="getEvent()">
+        Problem (4)
+      </button>
+      <button type="button" class="btn btn-warning" onclick="maxMin()">
+        Problem (5)
+      </button>
+      <button type="button" class="btn btn-info" onclick="EvenOdd()">
+        Problem (6)
+      </button>
+      <button type="button" class="btn btn-light" onclick="vowel()">
+        Problem (7)
+      </button>
+      <button type="button" class="btn btn-dark" onclick="out()">
+        Problem (9)
+      </button>
+
+      <button type="button" class="btn btn-primary" onclick="outProb10()">
+        Problem (10)
+      </button>
+      <button type="button" class="btn btn-secondary" onclick="allEven()">
+        Problem (11)
+      </button>
+      <button type="button" class="btn btn-success" onclick="powernum()">
+        Problem (12)
+      </button>
+      <button type="button" class="btn btn-danger p-3" onclick="marks()">
+        Problem (12) part 2
+      </button>
+      <button type="button" class="btn btn-warning" onclick="days()">
+        Problem (13)
+      </button>
+      <button type="button" class="btn btn-info" onclick="grad()">
+        Problem (14)
+      </button>
+    </div>
+
+    <div class="row w-75 m-auto">
+      <div class="col-lg-6">
+        <h1 class="text-center mt-4">Output</h1>
+        <h2 id="p" class="text-center mt-4"></h2>
+      </div>
+
+      <div class="col-lg-6">
+        <h1 class="text-center mt-4">Output of Switch</h1>
+        <h2 id="sw" class="text-center mt-4"></h2>
+      </div>
+    </div>
+
+    <!-- ************************************************************************ -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/prob1.js"></script>
+    <script src="js/prob2.js"></script>
+    <script src="js/prob3.js"></script>
+    <script src="js/prob4.js"></script>
+    <script src="js/prob5.js"></script>
+    <script src="js/prob6.js"></script>
+    <script src="js/prob7.js"></script>
+    <script src="js/prob9.js"></script>
+    <script src="js/prob10.js"></script>
+    <script src="js/prob11.js"></script>
+    <script src="js/prob12.js"></script>
+    <script src="js/prob12Part2.js"></script>
+    <script src="js/prob13.js"></script>
+    <script src="js/prob14.js"></script>
+    <script src="js/calc.js"></script>
+  </body>
+</html>
